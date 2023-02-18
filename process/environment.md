@@ -6,7 +6,7 @@
 - [ ] Ensure you both have a text editor
 - [ ] Ensure you both have Google Chrome
 
-### First Pairing Session
+### 🚗 First Pairing Session
 
 - [ ] First driver shares screen
 - [ ] Ensure the navigator can see the text editor and browser
@@ -19,7 +19,7 @@
 - [ ] Driver send the HTML code in a snippet to the navigator
 - [ ] Switch roles
 
-### Second Pairing Session
+### 🚙 Switch Roles
 
 - [ ] Second driver shares screen
 - [ ] Ensure the navigator can see the text editor and browser
