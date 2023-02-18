@@ -1,17 +1,49 @@
-# JavaScript
+# 💻 JavaScript
+
+#### Overview
+
+JavaScript is a versatile and powerful language in programming. JavaScript is a scripting language, meaning it is used to create logic that will make a webpage react to the interactions from a user. Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.
+
+#### Vocabulary
+
+- data type
+- number
+- string
+- Boolean
+- variable
+- equality operator
+- relational operator
+- string interpolation
+- conditional statement
+- function
+
+#### Additional Resources and Links
 
 - [JavaScript Practice Exercises](#javascript-practice-exercises)
--
+- [JavaScript Data Types](https://www.w3schools.com/js/js_datatypes.asp)
+- [JavaScript Built-in Functions Organized By Data Type](https://www.tutorialspoint.com/javascript/javascript_builtin_functions.htm)
+
+#### Process
+
+- Create a new file in your project folder called `javascript-practice.js`
+- Inspect the page (right click, or control click, in the browser)
+- Click over to the next tab called `Console`
+
+#### Troubleshooting Tips
+
+- What data type are you working with?
+- Did everything get copied and pasted correctly?
+- What does your error say?
+
+---
+
+### JavaScript Fundamentals
 
 JavaScript is a dynamic computer language that creates interactive experiences with the user.
 
-### JavaScript basics
+The Chrome console has a platform to run JavaScript. To access the platform, inspect the page (right click in the browser). At the top you will see a series of tabs. Select the tab called `Console`. This is a JavaScript runtime that will execute your JavaScript code but will not save your work or make any permanent changes.
 
-- Chrome console has a platform to run JavaScript
-- Inspect the page (right click in the browser)
-- Click over to the next tab called `Console`
-
-### Data types
+### Data Types
 
 Data types are how we define information for the computer. There are lots of data types but we are going to focus on three of them.
 
@@ -33,7 +65,7 @@ Four important parts:
 var myName = "Jumpstart Student"
 ```
 
-### Equality operators
+### Equality Operators
 
 Three equal signs is strict equality evaluations that returns a Boolean value.
 
@@ -41,7 +73,7 @@ Three equal signs is strict equality evaluations that returns a Boolean value.
 ===
 ```
 
-### Comparison operators
+### Relational Operators
 
 ```javascript
 // greater than
@@ -51,7 +83,7 @@ Three equal signs is strict equality evaluations that returns a Boolean value.
 // returns a Boolean value
 ```
 
-### String interpolation
+### String Interpolation
 
 A string syntax that allows a variable name to be added into a string. String interpolation is a string wrapped in backticks and uses `${}` for the variable.
 
@@ -63,7 +95,7 @@ ${variableName}
 `A string that has back tics and ${stringInterpolation}`
 ```
 
-### JS protected words
+### JS Protected Words
 
 JavaScript has vocabulary words and actions built in to the language.
 
@@ -146,7 +178,7 @@ Functions have eight parts:
 - Navigate to the console tab
 - You may need to hit return once you have pasted it
 
-### MadLibs of the Amazon
+#### MadLibs of the Amazon
 
 "Once upon a time there were some intrepid explorers who wandered into the amazon. They found some amazing things! Piranhas are more _adjective_ during the day, so make sure you cross the _noun_ at night. Piranhas are attracted to fresh _liquid_ and will most likely take a bite out of your _body part_ if you _verb_. Whatever you do, if you have an open _noun_ try and find another way to get back to _place_. Good luck!"
 
@@ -174,7 +206,7 @@ Using string interpolation to refactor the below paragraph so that it displays t
 
 "Once upon a time there were some intrepid explorers who wandered into the amazon. They found some amazing things! Piranhas are more _adjective_ during the day, so make sure you cross the _noun_ at night. Piranhas are attracted to fresh _liquid_ and will most likely take a bite out of your _body part_ if you _verb_. Whatever you do, if you have an open _noun_ try and find another way to get back to _place_. Good luck!"
 
-### World Domination
+#### World Domination
 
 Create a program that determines the user’s ability to rule the world.
 
@@ -183,7 +215,7 @@ Create a program that determines the user’s ability to rule the world.
 - As a user, if I reply "yes" I will see the alert, "You will rule the world, _name_!"
 - As a user, any reply other than "yes" will alert, "Well, good luck with that."
 
-### Magic 8 Ball
+#### Magic 8 Ball
 
 Create a function that asks the user a question and returns an answer.
 
@@ -195,7 +227,7 @@ Create a function that asks the user a question and returns an answer.
   - Signs point to yes
   - Outlook not so good
 
-### World Domination - Refactor
+#### World Domination - Refactor
 
 Take your “World domination” code and refactor it (make changes to the code) so that it is contained in a function.
 
@@ -223,7 +255,7 @@ WITHIN YOUR JS FILE: Set up a variable to store the random location of the bomb
 
 WITHIN YOUR FUNCTION: Add a conditional statement that will alert either the location of the bomb, the location of the treasure, or the id. (You may want the “id” alert to tell you the location of the treasure and bomb for troubleshooting purposes)
 
-WITHIN YOUR FUNCTION: Replace the alert with an action that will change the question mark in the td innerHTML to the tree, bomb, or treasure icon. You can also access an emoji keyboard by clicking `control + command + space` on a Mac, Windows . for PC.
+WITHIN YOUR FUNCTION: Replace the alert with an action that will change the question mark in the td innerHTML to the tree, bomb, or treasure icon. You can also access an emoji keyboard by clicking `fn` on a Mac or `WindowKey +` for a Windows computer.
 
 ```
 &#x1f332 = tree icon

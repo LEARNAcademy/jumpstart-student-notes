@@ -1,11 +1,40 @@
-# HTML
+# 💻 HTML
 
-HTML (Hypertext Markup Language) is the computer language that displays information to the user in a web browser.
+#### Overview
 
-### To create HTML computer code
+HTML (Hypertext Markup Language) is basis of all things on the internet. HTML is the computer language that displays information to the user in a web browser.
 
-- Text editor – at LEARN VS Code
-- Save a file with the extension .html (example: index.html)
+To create HTML you will need a text editor. A text editor is the software platform used to write code. We welcome all different text editors, but if you don't have a preference we recommend VS Code.
+
+#### Vocabulary
+
+- HTML
+- boilerplate
+- file extension
+- tag
+- attribute
+
+#### Additional Resources
+
+- [W3Schools HTML](https://www.w3schools.com/html/)
+
+#### Process
+
+- Create a new folder called `jumpstart`
+- Create a new file called `index.html`
+
+#### Troubleshooting Tips
+
+- Is your file saved?
+- Did you refresh your web browser?
+- Quit your browser and reopen.
+
+---
+
+### Creating HTML Code
+
+Create and new file called `index.html`.
+
 - Don’t use spaces or capital letters while naming directories or files
 - Setup the basic tags needed for your page called the DOCTYPE
 
@@ -47,7 +76,7 @@ HTML (Hypertext Markup Language) is the computer language that displays informat
 - Drag the icon in the top of your text editor window into Google Chrome to view your page
 - If you make changes to your code you must refresh the browser (command + r)
 
-### Treasure Hunt Challenge (HTML)
+### Treasure Hunt Challenge
 
 - Decide on a theme for your game
   Create a new directory (folder) on your desktop called `treasure-hunt`
@@ -69,18 +98,9 @@ HTML (Hypertext Markup Language) is the computer language that displays informat
 - Add a favicon to the browser tab
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Treasure Hunt Game</h1>
-    <img src="https://www.picture-url.png" alt="description of picture here" />
-  </body>
+<body>
+  <h1>Treasure Hunt Game</h1>
+  <img src="https://www.picture-url.png" alt="description of picture here" />
   <table>
     <tr>
       <td>?</td>
@@ -89,5 +109,5 @@ HTML (Hypertext Markup Language) is the computer language that displays informat
     </tr>
   </table>
   <button type="button">Restart Game</button>
-</html>
+</body>
 ```
