@@ -19,8 +19,8 @@ CSS (Cascading Style Sheets) is a styling language that describes how elements s
 
 - [W3Schools CSS](https://www.w3schools.com/w3css/defaulT.asp)
 - [CSS Properties](https://www.w3schools.com/cssref/index.php)
-- [Google Font](https://fonts.google.com/)
-- [CSS Tricks guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Google Fonts](https://fonts.google.com/)
+- [CSS Tricks Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Flexbox Froggy](http://flexboxfroggy.com/)
 - [Flexbox Defense](http://www.flexboxdefense.com/)
 - [CSS Animation for Beginners](https://thoughtbot.com/blog/css-animation-for-beginners)
@@ -270,14 +270,14 @@ h1 {
 
 ---
 
-### Treasure Hunt Challenge
+### 💎 Treasure Hunt Challenge
 
 Add a link tag to the head of the HTML page to create a dependency stylesheet.
 
-## This is an opportunity for you to explore styling. There are many, many possibilities for creating a look for your game, have fun and be creative!
+This is an opportunity for you to explore styling. There are many, many possibilities for creating a look for your game, have fun and be creative!
 
 ---
 
-[Back to the top](#css)
+[Back to the top](#-css)
 
 [Back to the main page](../README.md)

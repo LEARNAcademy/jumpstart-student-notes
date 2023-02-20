@@ -314,7 +314,7 @@ const magic8 = () => {
 
 ---
 
-### Treasure Hunt Challenge
+### 💎 Treasure Hunt Challenge
 
 - [ ] Create a new file in the `treasure-hunt` directory called `treasurehunt.js`.
 - [ ] Add a script tag to the bottom of the HTML body so the HTML page knows it has a dependency. Notice there is no innerHTML.
@@ -354,7 +354,7 @@ const treasure = (location) => {
 
 - [ ] Replace the alert with an action that will change the question mark innerHTML to a tree icon when clicked.
   - We can use the icon symbols or emojis.
-  - Access the emoji keyboard by clicking `fn` on a mac or `WindowKey +` for a Windows computer.
+  - Access the emoji keyboard by clicking `fn` on a mac or `WindowKey +` for a windows computer.
 
 ```
 &#x1f332 = tree icon
@@ -401,6 +401,6 @@ Stretch goals:
 
 ---
 
-[Back to the top](#javascript)
+[Back to the top](#-javascript)
 
 [Back to the main page](../README.md)

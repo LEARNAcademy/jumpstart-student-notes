@@ -105,7 +105,7 @@ Once the file is saved, the file can be opened in the Chrome browser. Each time 
 
 ---
 
-### Treasure Hunt Challenge
+### 💎 Treasure Hunt Challenge
 
 First, chat with your pair programming partner and decide on a theme for your game.
 
@@ -146,6 +146,6 @@ Below is an example of creating well-organized, nested tags.
 
 ---
 
-[Back to the top](#html)
+[Back to the top](#-html)
 
 [Back to the main page](../README.md)
