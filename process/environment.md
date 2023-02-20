@@ -10,7 +10,7 @@
 
 - [ ] First driver shares screen
 - [ ] Ensure the navigator can see the text editor and browser
-- [ ] Driver creates a folder called `treasure-hunt`
+- [ ] Driver creates a folder called `jumpstart`
 - [ ] Driver creates a file called `index.html`
 - [ ] Driver opens the file in a text editor
 - [ ] Driver adds the boilerplate HTML
@@ -23,7 +23,7 @@
 
 - [ ] Second driver shares screen
 - [ ] Ensure the navigator can see the text editor and browser
-- [ ] Driver creates a folder called `treasure-hunt`
+- [ ] Driver creates a folder called `jumpstart`
 - [ ] Driver creates a file called `index.html`
 - [ ] Driver opens the file in a text editor
 - [ ] Driver copies the code from Slack into the file
@@ -32,3 +32,7 @@
 - [ ] Driver send the HTML code in a snippet to the navigator
 
 ### Come back to the main room!
+
+---
+
+[Back to the main page](../README.md)

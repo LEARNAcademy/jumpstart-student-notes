@@ -63,3 +63,7 @@ Ensure that your html file for your treasure hunt is named exactly `index.html`
 8. Visit your GitHub Page url: `https://{your-username}.github.io`
 
 Enjoy and share the url with friends and family!
+
+---
+
+[Back to the main page](../README.md)
