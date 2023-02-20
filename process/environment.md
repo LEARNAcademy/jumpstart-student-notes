@@ -1,4 +1,4 @@
-# Getting Started
+# 🏃 Getting Started
 
 - [ ] Meet your partner!
 - [ ] Look through student notes
