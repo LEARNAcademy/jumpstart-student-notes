@@ -2,9 +2,9 @@
 
 ### 🗃 Table of Contents
 
-- [Pair programming](#pair-programming)
-- [Sharing code in Slack](#sharing-code-in-slack)
-- [Communication](#communication)
+- [Pair programming](#-pair-programming)
+- [Sharing code in Slack](#-sharing-code-in-slack)
+- [Communication](#-communication)
 - [Coding environment setup](./process/environment.md)
 - [HTML](./code/html.md)
 - [JavaScript](./code/javascript.md)
@@ -17,7 +17,7 @@
 
 ---
 
-### 💎 Treasure Hunt Tasks
+### 💎 Treasure Hunt Challenge
 
 During Jumpstart, each group is tasked with creating a treasure hunt web game. When developers are planning a project it is a common practice to break down the task into a series of acceptance criteria. Acceptance criteria are the statements that need to be true in order for our task to be complete.
 
