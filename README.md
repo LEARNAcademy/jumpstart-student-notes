@@ -69,3 +69,7 @@ Slack is an instant messaging platform we use for communication and resource sha
 Being a successful developer is being an excellent communicator.
 
 If you are going to be out of class for any reason, please inform the instructors. We can all be reached in Slack.
+
+---
+
+[Back to the top](#jumpstart-student-notes)
