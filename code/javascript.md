@@ -6,27 +6,30 @@ JavaScript is a versatile and powerful language in programming. JavaScript is a 
 
 #### Vocabulary
 
+- JavaScript
 - data type
 - number
 - string
 - Boolean
 - variable
+- camelCase
 - equality operator
 - relational operator
 - string interpolation
 - conditional statement
 - function
+- parameter
+- function invocation
 
-#### Additional Resources and Links
+#### Additional Resources
 
-- [JavaScript Practice Exercises](#javascript-practice-exercises)
 - [JavaScript Data Types](https://www.w3schools.com/js/js_datatypes.asp)
 - [JavaScript Built-in Functions Organized By Data Type](https://www.tutorialspoint.com/javascript/javascript_builtin_functions.htm)
 
 #### Process
 
-- Create a new file in your project folder called `javascript-practice.js`
-- Inspect the page (right click, or control click, in the browser)
+- Create a new file in your `jumpstart` folder called `javascript-practice.js`
+- Open a browser and inspect the page (right click, or control click, in the browser)
 - Click over to the next tab called `Console`
 
 #### Troubleshooting Tips
@@ -39,22 +42,40 @@ JavaScript is a versatile and powerful language in programming. JavaScript is a 
 
 ### JavaScript Fundamentals
 
-JavaScript is a dynamic computer language that creates interactive experiences with the user.
+**JavaScript** is a dynamic computer programming language that creates interactive experiences with the user.
 
-The Chrome console has a platform to run JavaScript. To access the platform, inspect the page (right click in the browser). At the top you will see a series of tabs. Select the tab called `Console`. This is a JavaScript runtime that will execute your JavaScript code but will not save your work or make any permanent changes.
+The Chrome console has a platform to run JavaScript. To access the platform we need to inspect the page. Right click on any page in the Chrome web browser and select the inspect option. At the top you will see a series of tabs. Select the tab called `Console`. This is a JavaScript runtime that will execute your JavaScript code but will not save your work or make any permanent changes.
 
 ### Data Types
 
-Data types are how we define information for the computer. There are lots of data types but we are going to focus on three of them.
+The building blocks of JavaScript are **data types** which is how we define information for the computer. There are lots of data types but we are going to focus on numbers, strings, and Boolean values.
 
-- Number - integer, float
-- String - any information stored in quotation marks `" "`
-- Boolean - `true` and `false`
+The **number** data type consist of both full-number integers and partial numbers called floats. Numbers are used for mathematical computations and evaluations.
+
+```javascript
+42
+3.14
+```
+
+The **string** data type is a collection of characters stored in quotation marks. Any data can be stored in a string.
+
+```javascript
+"Hello World!"
+"42"
+```
+
+The **Boolean** data type are the values of `true` and `false`. Booleans are used in evaluations and coding decisions.
+
+```javascript
+true
+false
+```
 
 ### Variables
 
-Variables are empty buckets that hold information.  
-Four important parts:
+**Variables** are named storage locations. Variables are used to hold data and make data easier to reference in our application.
+
+To create a variable there are four important parts. First we need a variable declaration. A variable declaration tells JavaScript we indeed to create a variable. Next is the name. Variable names should be descriptive and follow the JavaScript naming convention called camelCase. The **camelCase** naming convention starts with a lowercase letter and the first letter of each additional word is capitalized to make it easier to read. The next step is the assignment operator. An assignment operator is a single equal sign. Then the value of the variable can be any data type recognized by JavaScript.
 
 - Declaration: `var`
 - Name: `myName`
@@ -65,197 +86,275 @@ Four important parts:
 var myName = "Jumpstart Student"
 ```
 
-### Equality Operators
+### Operators and Comparisons
 
-Three equal signs is strict equality evaluations that returns a Boolean value.
+The purpose of JavaScript is to perform logic. There are several different ways we can have our code make decisions.
+
+The first is the equality operator. An **equality operator** determines if two values equate to the same. The operator uses three equal signs and returns a Boolean value.
 
 ```javascript
-===
+5 === 3 + 2
+// true
+
+5 === 3 + 3
+// false
+
+var myName = "Jumpstart"
+myName === "Jumpstart"
+// true
 ```
 
-### Relational Operators
+**Relational operators** compare whether a values is greater or less than another value. A relational operator returns a Boolean value.
 
 ```javascript
 // greater than
 100 > 5
+// true
+
 // less than
-15 < 30
-// returns a Boolean value
+30 < 29
+// false
 ```
 
 ### String Interpolation
 
-A string syntax that allows a variable name to be added into a string. String interpolation is a string wrapped in backticks and uses `${}` for the variable.
+**String interpolation** is a string syntax that allows a variable name to be added dynamically into a string. String interpolation is a collection of characters wrapped in backticks and uses `${}` for the variable.
 
-The back tic button live above the tab button on your keyboard.
+The backtick button live above the tab button on your keyboard.
 
 ```javascript
 ${variableName}
 
-`A string that has back tics and ${stringInterpolation}`
-```
+`This is string that is wrapped in backticks and uses ${stringInterpolation} to drop in a variable.`
 
-### JS Protected Words
-
-JavaScript has vocabulary words and actions built in to the language.
-
-```javascript
-// reserved words
-var
-const
-function
-if
-else if
-else
-return
-
-// built in methods
-.alert()
-.prompt()
-.toLowerCase()
-.getElementById()
+var myName = "Jumpstart"
+`Hello there, ${myName}!`
+// Hello there, Jumpstart!
 ```
 
 ### Conditionals
 
-A conditional is a way to make decisions in your code.
+A **conditional statement** is a sequence of instructions that produce a unique output based on the value of the input. Conditionals follow a flowchart-like structure and allow us to create logic in our code.
 
-This is the structure:
+The structure sets up a series of statements to be evaluated. Each statement has a corresponding code block that will be executed if the statement is true. Each conditional statement will have exactly one outcome.
 
 ```javascript
 if(this thing is true) {
   then do this thing here
 }
 else {
-  do this thing here
+  if the first thing is not true, do this
 }
 ```
 
-- `if`: begins the conditional statement and provides a condition that could be met
-  - There will only be one if in a single conditional statement
-- `else if`: follows the if and provides an additional condition that could be met
-  - There can be many else if statements
+- `if`: begins the conditional statement and provides a condition to be evaluated
+  - There will only be one `if` in a single conditional statement
+- `else if`: follows the `if` and provides an additional condition to be evaluated
+  - There can be many `else if` statements
 - `else`: catchall that provides an outcome that will run if none of the previous conditions are met
+  - There will only be one `else` in a single conditional statement
 
 ### Functions
 
-Reusable instructions that can take in information and evaluate the information using code.
+A **function** is a reusable code snippet that performs an action or behavior. Functions can take in information and perform evaluations producing an outcome.
 
-Functions have eight parts:
+To create a function we have to start with a variable declaration. Earlier when we created variables we used the declaration `var`. To create a function we are going to use the declaration `const`. The declaration `const` will prevent the variable from being reassigned.
 
-- Variable declaration: `const`
-  - This allows us to name our function and not have the program we write get changed by anything else
-- The function name: `myFunction`
-  - Name your functions something related to what you want them to do
-  - Always use camelCase
-- Assignment operator: `=`
-  - The single equal symbol sets the name we make to the value of of our program
-- The parentheses: `()`
-  - These parentheses can also take a placeholder depending on what our function wants to do with them
-    (number)
-    (string)
-    (name)
-- The arrow: `=>`
-  - The arrow => is the part of our program that is actually the function
-  - The arrow tells JavaScript "Hey this is a little machine here"
-- The curly brackets (code block): `{ }`
-  - Any code that we could write in JavaScript can go between these curly brackets
-  - These code inside the brackets will only operate when the function is called
-- The keyword return: `return`
-  - The `return` is the last thing that happens in any function - it will end the function action
-  - The return is what the function gives back to you when you call it
-  - If you have conditional statements (if/else) you can have one return per conditional statement
-- The function invocation: `myFunction()`
-  - Outside of the function code using the name of the function and giving it parentheses will let JavaScript know that is the time to use the function code
-
-### JavaScript Practice Exercises
-
-- Open your text editor
-- Save a new file inside of the `treasure-hunt` directory called `practice.js`
-- Remember: no spaces or capital letters
-- Copy and paste your code into the Chrome browser's console to see it run
-- Right click the Chrome page and select inspect
-- Navigate to the console tab
-- You may need to hit return once you have pasted it
-
-#### MadLibs of the Amazon
-
-"Once upon a time there were some intrepid explorers who wandered into the amazon. They found some amazing things! Piranhas are more _adjective_ during the day, so make sure you cross the _noun_ at night. Piranhas are attracted to fresh _liquid_ and will most likely take a bite out of your _body part_ if you _verb_. Whatever you do, if you have an open _noun_ try and find another way to get back to _place_. Good luck!"
-
-Premise – write a program that uses the built-in `alert()` method to get people excited
-Greeter – write a program using a prompt, saved as a variable, that asks for your name, then says hello to you
+Next we need to give our function a name. Just like any other variable, a function should have a descriptive name and be in camelCase. After the name we need an assignment operator.
 
 ```javascript
-var yourName = prompt("Please enter your name")
-// --> "Hello <yourName>! Let’s go explore the Amazon."
+const greeter =
 ```
 
-Write a program that tells you a funny story.
+After the assignment operator we need parentheses. In JavaScript, parentheses indicate action. Any information that needs to be added to the function can be passed through the parentheses. Passing information into a function requires creating a parameter. A **parameter** is a variable that belongs to a function.
 
-- As a user, I see a series of prompts that asks me for an adjective, a noun, a liquid, a body part, a verb, noun, and a place
-- As a user, I see an alert of a funny story that includes my answers
+```javascript
+// function without a parameter
+const greeter = ()
+
+// function with a parameter
+const greeter = (name)
+```
+
+After the parentheses is the arrow syntax. The arrow syntax indicates the type of function we are creating. Following the arrow will be a code block indicated by curly braces. All the code logic in the function will be inside the curly braces.
+
+```javascript
+// function without a parameter
+const greeter = () => {
+  // code block
+}
+
+// function with a parameter
+const greeter = (name) => {
+  // code block
+}
+```
+
+Any code logic needed can live inside a function. The ultimate output of the function is indicated by the keyword return. Return is a protected work in JavaScript that is the last thing that happens in any function.
+
+```javascript
+// function without a parameter
+const greeter = () => {
+  return "Hello World!"
+}
+
+// function with a parameter
+const greeter = (name) => {
+  return `Hello ${name}!`
+}
+```
+
+The function is all ready to go! But the interesting things about functions is that they don't do anything until they are told to. Telling a function to run is called **function invocation** a function. To invoke a function we call the name of the function followed with parentheses.
+
+- Declaration: `const`
+- Name: `greeter`
+- Assignment operator: `=`
+- Parentheses: `()`
+- Parameter: `(name)`
+- Arrow syntax: `=>`
+- Curly braces: `{}`
+- Keyword return: `return`
+- Function invocation: `greeter("Jumpstart")`
+
+```javascript
+// function without a parameter
+const greeter = () => {
+  return "Hello World!"
+}
+greeter()
+
+// function with a parameter
+const greeter = (name) => {
+  return `Hello ${name}!`
+}
+greeter("Jumpstart")
+```
+
+### JavaScript Tips and Tricks
+
+It can be helpful to create a random number in JavaScript. Random numbers will be useful in creating the game play in the treasure hunt game. JavaScript has a code snippet that will produce a random number between 0 and 1. We can multiply this number by any whole number then apply an action that will round the number down to the nearest whole number.
+
+```javascript
+// will create a random number between 0 and 3
+Math.floor(Math.random() * 4)
+
+// will create a random number between 0 and 7
+Math.floor(Math.random() * 8)
+```
+
+There is a handy tool in JavaScript for displaying the output of code. This is necessary when creating code in a JavaScript file. To see the outcome of code use `console.log()` and pass in a value into the parentheses.
+
+```javascript
+console.log("Hello world!")
+// Hello world!
+```
+
+There are built in actions in JavaScript called `alert()` and `prompt()` that create interaction with the user. An `alert()` will pop up a message in the web browser. A `prompt()` will create a popup where the user can type information. A `prompt()` can be saved as a variable which will capture the user's input.
+
+```javascript
+alert("Hello!")
+
+var favoriteFood = prompt("What is your favorite food?")
+```
+
+### Challenge: Greeter
+
+Prompt the user to enter their name. Once the user enters their name alert a greeting.
+
+```javascript
+var userName = prompt("What is your name?")
+
+// Alert: "Hello, <name>!"
+```
+
+### Challenge: Madlibs of the Amazon
+
+A Madlib is a game where a person is prompted to provide a series of words. Each word is prompted by a particular part of speech. The words are words are substituted for blanks in a story which creates a silly outcome.
+
+Create the code that will prompt the user for a series of words based on the part of speech. Use the result of those prompts to alert a funny story.
+
+"Once upon a time there were some intrepid explorers who wandered into the Amazon. They found some amazing things! Piranhas are more _adjective_ during the day, so make sure you cross the _noun_ at night. Piranhas are attracted to fresh _liquid_ and will most likely take a bite out of your _body part_ if you _verb_. Whatever you do, if you have an open _noun_ try and find another way to get back to _place_. Good luck!"
 
 ```javascript
 var adjective = prompt("Please enter an adjective.")
-var noun = prompt("Please enter a noun.")
+var noun1 = prompt("Please enter a noun.")
 ```
 
-Etc….
+Using string interpolation alert the paragraph with the variables plugged into the story.
 
-Using string interpolation to refactor the below paragraph so that it displays the values of the variables.
+### Challenge: World Domination
 
-"Once upon a time there were some intrepid explorers who wandered into the amazon. They found some amazing things! Piranhas are more _adjective_ during the day, so make sure you cross the _noun_ at night. Piranhas are attracted to fresh _liquid_ and will most likely take a bite out of your _body part_ if you _verb_. Whatever you do, if you have an open _noun_ try and find another way to get back to _place_. Good luck!"
+Create a program that determines the user's ability to rule the world.
 
-#### World Domination
+- Create a prompt that asks for the user's name.
+- Create a prompt that asks the user if they know how to write code.
+- If the user replies "yes" respond with an alert that says, "You will rule the world, _name_!"
+- If the user does not reply "yes" respond with an alert that says, "Well, good luck with that."
 
-Create a program that determines the user’s ability to rule the world.
+### Challenge: Magic 8 Ball
 
-- As a user, I can see a prompt that asks me my name
-- As a user, I can see a prompt that asks me if I know how to write code
-- As a user, if I reply "yes" I will see the alert, "You will rule the world, _name_!"
-- As a user, any reply other than "yes" will alert, "Well, good luck with that."
+Create a function that asks the user a question and returns a random answer.
 
-#### Magic 8 Ball
-
-Create a function that asks the user a question and returns an answer.
-
-- As a user, I see a prompt where I can ask a question
-- As a user, I see an alert that tells me a random Magic 8 Ball answer
+- Create a prompt where the user can ask a question.
+- After the user submits a question, create an alert that gives a random answer from the magic 8 ball.
+- Traditional 8 ball answers include the following but creative liberties are always encouraged:
   - Better not tell you now
   - It is decidedly so
   - Don’t count on it
   - Signs point to yes
   - Outlook not so good
 
-#### World Domination - Refactor
+```javascript
+const magic8 = () => {
+  prompt("Ask the Magic8 8 Ball a question.")
+  var randomNumber = Math.floor(Math.random() * 3)
+  ....
+}
+```
 
-Take your “World domination” code and refactor it (make changes to the code) so that it is contained in a function.
-
-- As a user, I can run the world domination program by invoking the name of the function
+---
 
 ### Treasure Hunt Challenge
 
-Create a new file in the `treasure-hunt` directory called `treasurehunt.js`.
-
-Add a script tag to the bottom of the HTML body so the HTML page knows it has a dependency. Notice there is no innerHTML.
+- [ ] Create a new file in the `treasure-hunt` directory called `treasurehunt.js`.
+- [ ] Add a script tag to the bottom of the HTML body so the HTML page knows it has a dependency. Notice there is no innerHTML.
 
 ```html
 <script type="text/javascript" src="treasurehunt.js"></script>
 ```
 
-As a first step to connecting the HTML and JS, create a function called `treasure` that takes an argument of `location` and returns an alert displaying the id of the square on the game board when it is clicked on.
+- [ ] Create a function called `treasure` that returns an alert.
 
-Add an `onclick` attribute to all the nested table tags so when our user clicks on the question mark it will trigger the `treasure` function to run in the JavaScript file.
+```javascript
+const treasure = () => {
+  return alert("Here is the function!")
+}
+```
 
-Add a unique id (numbers 0-8) to all `<td></td>` tags so we can identify which `td `was clicked and perform an action on the correct location.
+- [ ] Add an `onclick` attribute to all the game board squares that calls the `treasure` function. If this is done correctly, the alert should appear each time the user clicks on a square.
 
-WITHIN YOUR JS FILE: Set up a variable to store the random location of the rainbow treasure
+```html
+<td onclick="treasure()">?</td>
+```
 
-WITHIN YOUR JS FILE: Set up a variable to store the random location of the bomb
+- [ ] Add a parameter to the function called `location` and pass the location parameter to the alert.
 
-WITHIN YOUR FUNCTION: Add a conditional statement that will alert either the location of the bomb, the location of the treasure, or the id. (You may want the “id” alert to tell you the location of the treasure and bomb for troubleshooting purposes)
+```javascript
+const treasure = (location) => {
+  return alert(location)
+}
+```
 
-WITHIN YOUR FUNCTION: Replace the alert with an action that will change the question mark in the td innerHTML to the tree, bomb, or treasure icon. You can also access an emoji keyboard by clicking `fn` on a Mac or `WindowKey +` for a Windows computer.
+- [ ] Add a unique id (numbers 0-8) to all game board squares.
+- [ ] Pass the same number into the function invocation. If this is done correctly, the alert will display the id of each square.
+
+```html
+<td id="0" onclick="treasure(0)">?</td>
+```
+
+- [ ] Replace the alert with an action that will change the question mark innerHTML to a tree icon when clicked.
+  - We can use the icon symbols or emojis.
+  - Access the emoji keyboard by clicking `fn` on a mac or `WindowKey +` for a Windows computer.
 
 ```
 &#x1f332 = tree icon
@@ -263,7 +362,25 @@ WITHIN YOUR FUNCTION: Replace the alert with an action that will change the ques
 &#x1f308 = rainbow icon
 ```
 
-Add an `onclick` to the button that will refresh the page, resetting the game board.
+```javascript
+// using the icon symbol
+document.getElementById(location).innerHTML = "&#x1f332"
+
+// using an emoji
+document.getElementById(location).innerHTML = "🌴"
+```
+
+- [ ] Create a variable for the treasure that will store a random number between 0 and 8.
+- [ ] Create a variable for the bomb that will store a random number between 0 and 8.
+- [ ] Add a conditional statement that will evaluate if the location clicked equates to the random treasure location.
+- [ ] If the treasure evaluation is true change the innerHTML question mark to a treasure.
+- [ ] Add another level to the conditional statement that will evaluate if the location clicked equates to the random bomb location.
+- [ ] If the bomb evaluation is true change the innerHTML question mark to a bomb.
+- [ ] Add an `onclick` to the HTML button that will refresh the page, resetting the game board.
+
+```html
+<button type="button" onclick="location.reload()">Restart Game</button>
+```
 
 Things to consider:
 
@@ -272,18 +389,18 @@ Things to consider:
 
 Stretch goals:
 
-- Add a counter
-  - Set up the counter to keep track of the number of clicks. The user has a set amount of tries before losing the game
-  - Assign a variable to the base value
-    0
-  - Reassign the variable every time the treasure function runs
-  - Attach the counter to the HTML with an id tag
-- Add multiple bombs
-- Create a larger map
-- Collect multiple treasures
-  - The user must collect all the treasures before running out of clicks or clicking on a bomb
-- Play against the computer
-  - Race the computer to find the treasure
-  - Create another function to handle the computer’s moves
-  - Create another button on the page to run the computer’s turn
-  - Ensure the user cannot keep playing while it’s still the computer’s turn and vice versa
+- [ ] Add a counter to keep track of the number of clicks. The user has a set amount of tries before losing the game.
+- [ ] Add multiple bombs.
+- [ ] Create a larger map.
+- [ ] The user must collect multiple treasures before running out of clicks or clicking on a bomb.
+- [ ] Play against the computer
+  - Race the computer to find the treasure.
+  - Create another function to handle the computer's moves.
+  - Create another button on the page to run the computer's turn.
+  - Ensure the user cannot keep playing while it's still the computer's turn and vice versa.
+
+---
+
+[Back to the top](#javascript)
+
+[Back to the main page](../README.md)
