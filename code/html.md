@@ -20,6 +20,7 @@ To create HTML we will need a text editor. A text editor is the software platfor
 
 #### Additional Resources
 
+- [HTML Boilerplate](https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/)
 - [W3Schools HTML](https://www.w3schools.com/html/)
 
 #### Process
