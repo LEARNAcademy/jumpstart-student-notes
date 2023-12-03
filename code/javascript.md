@@ -354,7 +354,7 @@ const treasure = (location) => {
 
 - [ ] Replace the alert with an action that will change the question mark innerHTML to a tree icon when clicked.
   - We can use the icon symbols or emojis.
-  - Access the emoji keyboard by clicking `fn` on a mac or `WindowKey +` for a windows computer.
+  - Access the emoji keyboard by pressing `CTRL + CMD + Space` on macOS or by pressing the `Windows logo key + . (period)` on Windows.
 
 ```
 &#x1f332 = tree icon
