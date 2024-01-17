@@ -2,14 +2,14 @@
 
 ### 🗃 Table of Contents
 
-- [Pair programming](#-pair-programming)
-- [Sharing code in Slack](#-sharing-code-in-slack)
-- [Communication](#-communication)
 - [Coding environment setup](./process/environment.md)
 - [HTML](./code/html.md)
 - [JavaScript](./code/javascript.md)
 - [CSS](./code/css.md)
 - [Deployment process](./process/deployment.md)
+- [Pair programming](#-pair-programming)
+- [Sharing code in Slack](#-sharing-code-in-slack)
+- [Communication](#-communication)
 
 ### 🔗 Resources
 
